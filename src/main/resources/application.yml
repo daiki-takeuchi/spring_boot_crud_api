@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring_boot_crud_api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db:3306/${MYSQL_DATABASE}?character_set_server=utf8
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  messages:
+    basename: ValidationMessages_ja
+
+jwt:
+    secret: 278DmzNwoRlr9z22B5UB5kZkp9ttZ8odabUB8o0hRfk=
+    expiration: 3600
